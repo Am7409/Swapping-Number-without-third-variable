@@ -1,0 +1,15 @@
+#include<stdio.h>
+void swap(int x, int y)
+{  x=x+y;
+   y=x-y;
+   x=x-y;
+  printf("The values of a and b is after swapping  %d , %d \n", x, y);
+}
+int main()
+{ int a,b;
+    printf("Enter the number to swap \n");
+     scanf("%d %d", &a, &b);
+    printf("The values before swapping %d , %d \n ",a, b);
+    swap(a,b);
+    return 0;
+}
